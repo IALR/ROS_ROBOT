@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/ilyas/ros2_ws/install/transmission_interface/include/**",
+        "/home/ilyas/ros2_ws/install/ros2_control_test_assets/include/**",
+        "/home/ilyas/ros2_ws/install/joint_limits/include/**",
+        "/home/ilyas/ros2_ws/install/controller_manager/include/**",
+        "/home/ilyas/ros2_ws/install/controller_interface/include/**",
+        "/home/ilyas/ros2_ws/install/hardware_interface/include/**",
+        "/home/ilyas/ros2_ws/install/controller_manager_msgs/include/**",
+        "/opt/ros/humble/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

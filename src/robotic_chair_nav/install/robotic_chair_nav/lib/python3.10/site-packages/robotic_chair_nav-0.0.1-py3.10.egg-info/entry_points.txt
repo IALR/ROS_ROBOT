@@ -1,0 +1,4 @@
+[console_scripts]
+move_forward = robotic_chair_nav.move_forward:main
+obstacle_stop_node = robotic_chair_nav.obstacle_stop_node:main
+
