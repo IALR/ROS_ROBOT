@@ -1,0 +1,42 @@
+[0.031s] Invoking command in '/home/ilyas/ros2_ws/build/simple_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ilyas/ros2_ws/install/rqt_joint_trajectory_controller:/home/ilyas/ros2_ws/install/ros2_controllers_test_nodes:/home/ilyas/ros2_ws/install/robotic_chair_nav:/home/ilyas/ros2_ws/install/my_first_package:/home/ilyas/ros2_ws/src/robotic_chair_nav/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/my_first_package:/opt/ros/humble /usr/bin/cmake /home/ilyas/ros2_ws/src/simple_world -DCMAKE_INSTALL_PREFIX=/home/ilyas/ros2_ws/install/simple_world
+[0.182s] -- The C compiler identification is GNU 11.4.0
+[0.311s] -- The CXX compiler identification is GNU 11.4.0
+[0.396s] -- Detecting C compiler ABI info
+[0.632s] -- Detecting C compiler ABI info - done
+[0.639s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.640s] -- Detecting C compile features
+[0.647s] -- Detecting C compile features - done
+[0.690s] -- Detecting CXX compiler ABI info
+[0.889s] -- Detecting CXX compiler ABI info - done
+[0.896s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.896s] -- Detecting CXX compile features
+[0.897s] -- Detecting CXX compile features - done
+[0.986s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.246s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.655s] -- Configuring done
+[1.660s] -- Generating done
+[1.664s] -- Build files have been written to: /home/ilyas/ros2_ws/build/simple_world
+[1.673s] Invoked command in '/home/ilyas/ros2_ws/build/simple_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ilyas/ros2_ws/install/rqt_joint_trajectory_controller:/home/ilyas/ros2_ws/install/ros2_controllers_test_nodes:/home/ilyas/ros2_ws/install/robotic_chair_nav:/home/ilyas/ros2_ws/install/my_first_package:/home/ilyas/ros2_ws/src/robotic_chair_nav/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/my_first_package:/opt/ros/humble /usr/bin/cmake /home/ilyas/ros2_ws/src/simple_world -DCMAKE_INSTALL_PREFIX=/home/ilyas/ros2_ws/install/simple_world
+[1.678s] Invoking command in '/home/ilyas/ros2_ws/build/simple_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ilyas/ros2_ws/install/rqt_joint_trajectory_controller:/home/ilyas/ros2_ws/install/ros2_controllers_test_nodes:/home/ilyas/ros2_ws/install/robotic_chair_nav:/home/ilyas/ros2_ws/install/my_first_package:/home/ilyas/ros2_ws/src/robotic_chair_nav/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/my_first_package:/opt/ros/humble /usr/bin/cmake --build /home/ilyas/ros2_ws/build/simple_world -- -j3 -l3
+[1.750s] Invoked command in '/home/ilyas/ros2_ws/build/simple_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ilyas/ros2_ws/install/rqt_joint_trajectory_controller:/home/ilyas/ros2_ws/install/ros2_controllers_test_nodes:/home/ilyas/ros2_ws/install/robotic_chair_nav:/home/ilyas/ros2_ws/install/my_first_package:/home/ilyas/ros2_ws/src/robotic_chair_nav/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/my_first_package:/opt/ros/humble /usr/bin/cmake --build /home/ilyas/ros2_ws/build/simple_world -- -j3 -l3
+[1.751s] Invoking command in '/home/ilyas/ros2_ws/build/simple_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ilyas/ros2_ws/install/rqt_joint_trajectory_controller:/home/ilyas/ros2_ws/install/ros2_controllers_test_nodes:/home/ilyas/ros2_ws/install/robotic_chair_nav:/home/ilyas/ros2_ws/install/my_first_package:/home/ilyas/ros2_ws/src/robotic_chair_nav/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/my_first_package:/opt/ros/humble /usr/bin/cmake --install /home/ilyas/ros2_ws/build/simple_world
+[1.765s] -- Install configuration: ""
+[1.765s] -- Installing: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/worlds
+[1.766s] -- Installing: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/worlds/robotic_chair_worlds.world
+[1.766s] -- Installing: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/worlds/simple_world2.world
+[1.769s] -- Installing: /home/ilyas/ros2_ws/install/simple_world/share/ament_index/resource_index/package_run_dependencies/simple_world
+[1.769s] -- Installing: /home/ilyas/ros2_ws/install/simple_world/share/ament_index/resource_index/parent_prefix_path/simple_world
+[1.769s] -- Installing: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/environment/ament_prefix_path.sh
+[1.769s] -- Installing: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/environment/ament_prefix_path.dsv
+[1.769s] -- Installing: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/environment/path.sh
+[1.769s] -- Installing: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/environment/path.dsv
+[1.770s] -- Installing: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/local_setup.bash
+[1.770s] -- Installing: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/local_setup.sh
+[1.770s] -- Installing: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/local_setup.zsh
+[1.770s] -- Installing: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/local_setup.dsv
+[1.770s] -- Installing: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/package.dsv
+[1.770s] -- Installing: /home/ilyas/ros2_ws/install/simple_world/share/ament_index/resource_index/packages/simple_world
+[1.770s] -- Installing: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/cmake/simple_worldConfig.cmake
+[1.771s] -- Installing: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/cmake/simple_worldConfig-version.cmake
+[1.771s] -- Installing: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/package.xml
+[1.774s] Invoked command in '/home/ilyas/ros2_ws/build/simple_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ilyas/ros2_ws/install/rqt_joint_trajectory_controller:/home/ilyas/ros2_ws/install/ros2_controllers_test_nodes:/home/ilyas/ros2_ws/install/robotic_chair_nav:/home/ilyas/ros2_ws/install/my_first_package:/home/ilyas/ros2_ws/src/robotic_chair_nav/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/my_first_package:/opt/ros/humble /usr/bin/cmake --install /home/ilyas/ros2_ws/build/simple_world

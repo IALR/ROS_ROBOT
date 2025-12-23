@@ -1,0 +1,9 @@
+/home/ilyas/ros2_ws/src/build/robotic_chair_description/CMakeFiles/uninstall.dir
+/home/ilyas/ros2_ws/src/build/robotic_chair_description/CMakeFiles/robotic_chair_description_uninstall.dir
+/home/ilyas/ros2_ws/src/build/robotic_chair_description/CMakeFiles/test.dir
+/home/ilyas/ros2_ws/src/build/robotic_chair_description/CMakeFiles/edit_cache.dir
+/home/ilyas/ros2_ws/src/build/robotic_chair_description/CMakeFiles/rebuild_cache.dir
+/home/ilyas/ros2_ws/src/build/robotic_chair_description/CMakeFiles/list_install_components.dir
+/home/ilyas/ros2_ws/src/build/robotic_chair_description/CMakeFiles/install.dir
+/home/ilyas/ros2_ws/src/build/robotic_chair_description/CMakeFiles/install/local.dir
+/home/ilyas/ros2_ws/src/build/robotic_chair_description/CMakeFiles/install/strip.dir

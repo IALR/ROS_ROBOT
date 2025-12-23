@@ -1,0 +1,9 @@
+/home/ilyas/ros2_ws/build/simple_world/CMakeFiles/uninstall.dir
+/home/ilyas/ros2_ws/build/simple_world/CMakeFiles/simple_world_uninstall.dir
+/home/ilyas/ros2_ws/build/simple_world/CMakeFiles/test.dir
+/home/ilyas/ros2_ws/build/simple_world/CMakeFiles/edit_cache.dir
+/home/ilyas/ros2_ws/build/simple_world/CMakeFiles/rebuild_cache.dir
+/home/ilyas/ros2_ws/build/simple_world/CMakeFiles/list_install_components.dir
+/home/ilyas/ros2_ws/build/simple_world/CMakeFiles/install.dir
+/home/ilyas/ros2_ws/build/simple_world/CMakeFiles/install/local.dir
+/home/ilyas/ros2_ws/build/simple_world/CMakeFiles/install/strip.dir

@@ -1,0 +1,83 @@
+[0.000000] (-) TimerEvent: {}
+[0.000375] (-) JobUnselected: {'identifier': 'my_first_package'}
+[0.000422] (-) JobUnselected: {'identifier': 'robotic_chair_description'}
+[0.000449] (robotic_chair_nav) JobQueued: {'identifier': 'robotic_chair_nav', 'dependencies': OrderedDict()}
+[0.000474] (robotic_chair_nav) JobStarted: {'identifier': 'robotic_chair_nav'}
+[0.097472] (-) TimerEvent: {}
+[0.320342] (-) TimerEvent: {}
+[0.421757] (-) TimerEvent: {}
+[0.525069] (-) TimerEvent: {}
+[0.633185] (-) TimerEvent: {}
+[0.734222] (-) TimerEvent: {}
+[0.836909] (-) TimerEvent: {}
+[0.941544] (-) TimerEvent: {}
+[1.042987] (-) TimerEvent: {}
+[1.146047] (-) TimerEvent: {}
+[1.248461] (-) TimerEvent: {}
+[1.349983] (-) TimerEvent: {}
+[1.451069] (-) TimerEvent: {}
+[1.553076] (-) TimerEvent: {}
+[1.654012] (-) TimerEvent: {}
+[1.755123] (-) TimerEvent: {}
+[1.857819] (-) TimerEvent: {}
+[1.958586] (-) TimerEvent: {}
+[2.059287] (-) TimerEvent: {}
+[2.161138] (-) TimerEvent: {}
+[2.263811] (-) TimerEvent: {}
+[2.365929] (-) TimerEvent: {}
+[2.467227] (-) TimerEvent: {}
+[2.568046] (-) TimerEvent: {}
+[2.669835] (-) TimerEvent: {}
+[2.771474] (-) TimerEvent: {}
+[2.872322] (-) TimerEvent: {}
+[2.973929] (-) TimerEvent: {}
+[3.076428] (-) TimerEvent: {}
+[3.177905] (-) TimerEvent: {}
+[3.280865] (-) TimerEvent: {}
+[3.381868] (-) TimerEvent: {}
+[3.483311] (-) TimerEvent: {}
+[3.501882] (robotic_chair_nav) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/robotic_chair_nav', 'build', '--build-base', '/home/ilyas/ros2_ws/src/build/robotic_chair_nav/build', 'install', '--record', '/home/ilyas/ros2_ws/src/build/robotic_chair_nav/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ilyas/ros2_ws/src/robotic_chair_nav', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'ilyas', 'LC_TIME': 'ar_MA.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ilyas/ros2_ws/install/transmission_interface/lib:/home/ilyas/ros2_ws/install/hardware_interface_testing/lib:/home/ilyas/ros2_ws/install/ros2_control_test_assets/lib:/home/ilyas/ros2_ws/install/joint_limits/lib:/home/ilyas/ros2_ws/install/controller_manager/lib:/home/ilyas/ros2_ws/install/controller_interface/lib:/home/ilyas/ros2_ws/install/hardware_interface/lib:/home/ilyas/ros2_ws/install/controller_manager_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ilyas', 'OLDPWD': '/home/ilyas/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ar_MA.UTF-8', 'SYSTEMD_EXEC_PID': '2398', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/ilyas/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'ilyas', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ilyas', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ilyas-VirtualBox:@/tmp/.ICE-unix/2361,unix/ilyas-VirtualBox:/tmp/.ICE-unix/2361', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ar_MA.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/c46d76b3_3db8_4354_bfa0_c0a4786d9246', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ar_MA.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.7OVSH3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.103', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ilyas/ros2_ws/install/wheelchair_description:/home/ilyas/ros2_ws/install/transmission_interface:/home/ilyas/ros2_ws/install/rqt_joint_trajectory_controller:/home/ilyas/ros2_ws/install/ros2_controllers_test_nodes:/home/ilyas/ros2_ws/install/hardware_interface_testing:/home/ilyas/ros2_ws/install/ros2_control_test_assets:/home/ilyas/ros2_ws/install/robotic_chair_description:/home/ilyas/ros2_ws/install/my_first_package:/home/ilyas/ros2_ws/install/joint_limits:/home/ilyas/ros2_ws/install/controller_manager:/home/ilyas/ros2_ws/install/controller_interface:/home/ilyas/ros2_ws/install/hardware_interface:/home/ilyas/ros2_ws/install/controller_manager_msgs:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ar_MA.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ar_MA.UTF-8', 'LC_IDENTIFICATION': 'ar_MA.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ilyas/ros2_ws/src/build/robotic_chair_nav', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ilyas/ros2_ws/src/build/robotic_chair_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ilyas/ros2_ws/src/install/robotic_chair_nav/lib/python3.10/site-packages:/home/ilyas/ros2_ws/install/rqt_joint_trajectory_controller/lib/python3.10/site-packages:/home/ilyas/ros2_ws/install/ros2_controllers_test_nodes/lib/python3.10/site-packages:/home/ilyas/ros2_ws/install/my_first_package/lib/python3.10/site-packages:/home/ilyas/ros2_ws/install/controller_manager/local/lib/python3.10/dist-packages:/home/ilyas/ros2_ws/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ar_MA.UTF-8', 'LC_PAPER': 'ar_MA.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/ilyas/ros2_ws/install/wheelchair_description:/home/ilyas/ros2_ws/install/transmission_interface:/home/ilyas/ros2_ws/install/hardware_interface_testing:/home/ilyas/ros2_ws/install/ros2_control_test_assets:/home/ilyas/ros2_ws/install/robotic_chair_description:/home/ilyas/ros2_ws/install/joint_limits:/home/ilyas/ros2_ws/install/controller_manager:/home/ilyas/ros2_ws/install/controller_interface:/home/ilyas/ros2_ws/install/hardware_interface:/home/ilyas/ros2_ws/install/controller_manager_msgs'}, 'shell': False}
+[3.727189] (-) TimerEvent: {}
+[3.729387] (robotic_chair_nav) StdoutLine: {'line': b'running egg_info\n'}
+[3.730051] (robotic_chair_nav) StdoutLine: {'line': b'creating ../build/robotic_chair_nav/robotic_chair_nav.egg-info\n'}
+[3.730160] (robotic_chair_nav) StdoutLine: {'line': b'writing ../build/robotic_chair_nav/robotic_chair_nav.egg-info/PKG-INFO\n'}
+[3.732039] (robotic_chair_nav) StdoutLine: {'line': b'writing dependency_links to ../build/robotic_chair_nav/robotic_chair_nav.egg-info/dependency_links.txt\n'}
+[3.732218] (robotic_chair_nav) StdoutLine: {'line': b'writing entry points to ../build/robotic_chair_nav/robotic_chair_nav.egg-info/entry_points.txt\n'}
+[3.732265] (robotic_chair_nav) StdoutLine: {'line': b'writing requirements to ../build/robotic_chair_nav/robotic_chair_nav.egg-info/requires.txt\n'}
+[3.732304] (robotic_chair_nav) StdoutLine: {'line': b'writing top-level names to ../build/robotic_chair_nav/robotic_chair_nav.egg-info/top_level.txt\n'}
+[3.732339] (robotic_chair_nav) StdoutLine: {'line': b"writing manifest file '../build/robotic_chair_nav/robotic_chair_nav.egg-info/SOURCES.txt'\n"}
+[3.795461] (robotic_chair_nav) StdoutLine: {'line': b"reading manifest file '../build/robotic_chair_nav/robotic_chair_nav.egg-info/SOURCES.txt'\n"}
+[3.797071] (robotic_chair_nav) StdoutLine: {'line': b"writing manifest file '../build/robotic_chair_nav/robotic_chair_nav.egg-info/SOURCES.txt'\n"}
+[3.797983] (robotic_chair_nav) StdoutLine: {'line': b'running build\n'}
+[3.798448] (robotic_chair_nav) StdoutLine: {'line': b'running build_py\n'}
+[3.799264] (robotic_chair_nav) StdoutLine: {'line': b'creating /home/ilyas/ros2_ws/src/build/robotic_chair_nav/build\n'}
+[3.799414] (robotic_chair_nav) StdoutLine: {'line': b'creating /home/ilyas/ros2_ws/src/build/robotic_chair_nav/build/lib\n'}
+[3.799455] (robotic_chair_nav) StdoutLine: {'line': b'creating /home/ilyas/ros2_ws/src/build/robotic_chair_nav/build/lib/robotic_chair_nav\n'}
+[3.799491] (robotic_chair_nav) StdoutLine: {'line': b'copying robotic_chair_nav/obstacle_stop_node.py -> /home/ilyas/ros2_ws/src/build/robotic_chair_nav/build/lib/robotic_chair_nav\n'}
+[3.799859] (robotic_chair_nav) StdoutLine: {'line': b'copying robotic_chair_nav/__init__.py -> /home/ilyas/ros2_ws/src/build/robotic_chair_nav/build/lib/robotic_chair_nav\n'}
+[3.799967] (robotic_chair_nav) StdoutLine: {'line': b'running install\n'}
+[3.800340] (robotic_chair_nav) StdoutLine: {'line': b'running install_lib\n'}
+[3.800838] (robotic_chair_nav) StdoutLine: {'line': b'creating /home/ilyas/ros2_ws/src/install/robotic_chair_nav/lib/python3.10/site-packages/robotic_chair_nav\n'}
+[3.800929] (robotic_chair_nav) StdoutLine: {'line': b'copying /home/ilyas/ros2_ws/src/build/robotic_chair_nav/build/lib/robotic_chair_nav/obstacle_stop_node.py -> /home/ilyas/ros2_ws/src/install/robotic_chair_nav/lib/python3.10/site-packages/robotic_chair_nav\n'}
+[3.800971] (robotic_chair_nav) StdoutLine: {'line': b'copying /home/ilyas/ros2_ws/src/build/robotic_chair_nav/build/lib/robotic_chair_nav/__init__.py -> /home/ilyas/ros2_ws/src/install/robotic_chair_nav/lib/python3.10/site-packages/robotic_chair_nav\n'}
+[3.801940] (robotic_chair_nav) StdoutLine: {'line': b'byte-compiling /home/ilyas/ros2_ws/src/install/robotic_chair_nav/lib/python3.10/site-packages/robotic_chair_nav/obstacle_stop_node.py to obstacle_stop_node.cpython-310.pyc\n'}
+[3.802921] (robotic_chair_nav) StdoutLine: {'line': b'byte-compiling /home/ilyas/ros2_ws/src/install/robotic_chair_nav/lib/python3.10/site-packages/robotic_chair_nav/__init__.py to __init__.cpython-310.pyc\n'}
+[3.803144] (robotic_chair_nav) StdoutLine: {'line': b'running install_data\n'}
+[3.803222] (robotic_chair_nav) StdoutLine: {'line': b'creating /home/ilyas/ros2_ws/src/install/robotic_chair_nav/share/ament_index\n'}
+[3.803282] (robotic_chair_nav) StdoutLine: {'line': b'creating /home/ilyas/ros2_ws/src/install/robotic_chair_nav/share/ament_index/resource_index\n'}
+[3.803616] (robotic_chair_nav) StdoutLine: {'line': b'creating /home/ilyas/ros2_ws/src/install/robotic_chair_nav/share/ament_index/resource_index/packages\n'}
+[3.803695] (robotic_chair_nav) StdoutLine: {'line': b'copying resource/robotic_chair_nav -> /home/ilyas/ros2_ws/src/install/robotic_chair_nav/share/ament_index/resource_index/packages\n'}
+[3.804007] (robotic_chair_nav) StdoutLine: {'line': b'copying package.xml -> /home/ilyas/ros2_ws/src/install/robotic_chair_nav/share/robotic_chair_nav\n'}
+[3.804361] (robotic_chair_nav) StdoutLine: {'line': b'creating /home/ilyas/ros2_ws/src/install/robotic_chair_nav/share/robotic_chair_nav/launch\n'}
+[3.804425] (robotic_chair_nav) StdoutLine: {'line': b'copying launch/sim_with_nav.launch.py -> /home/ilyas/ros2_ws/src/install/robotic_chair_nav/share/robotic_chair_nav/launch\n'}
+[3.804463] (robotic_chair_nav) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.811943] (robotic_chair_nav) StdoutLine: {'line': b'Copying ../build/robotic_chair_nav/robotic_chair_nav.egg-info to /home/ilyas/ros2_ws/src/install/robotic_chair_nav/lib/python3.10/site-packages/robotic_chair_nav-0.0.1-py3.10.egg-info\n'}
+[3.812452] (robotic_chair_nav) StdoutLine: {'line': b'running install_scripts\n'}
+[3.829554] (-) TimerEvent: {}
+[3.830987] (robotic_chair_nav) StdoutLine: {'line': b'Installing obstacle_stop script to /home/ilyas/ros2_ws/src/install/robotic_chair_nav/lib/robotic_chair_nav\n'}
+[3.831883] (robotic_chair_nav) StdoutLine: {'line': b"writing list of installed files to '/home/ilyas/ros2_ws/src/build/robotic_chair_nav/install.log'\n"}
+[3.861064] (robotic_chair_nav) CommandEnded: {'returncode': 0}
+[3.930543] (-) TimerEvent: {}
+[4.032576] (-) TimerEvent: {}
+[4.068321] (robotic_chair_nav) JobEnded: {'identifier': 'robotic_chair_nav', 'rc': 0}
+[4.068732] (-) EventReactorShutdown: {}

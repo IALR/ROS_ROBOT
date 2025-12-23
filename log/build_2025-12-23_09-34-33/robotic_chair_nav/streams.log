@@ -1,0 +1,48 @@
+[1.113s] Invoking command in '/home/ilyas/ros2_ws/src/robotic_chair_nav': PYTHONPATH=/home/ilyas/ros2_ws/build/robotic_chair_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ilyas/ros2_ws/install/robotic_chair_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robotic_chair_nav build --build-base /home/ilyas/ros2_ws/build/robotic_chair_nav/build install --record /home/ilyas/ros2_ws/build/robotic_chair_nav/install.log --single-version-externally-managed install_data
+[1.352s] running egg_info
+[1.352s] creating ../../build/robotic_chair_nav/robotic_chair_nav.egg-info
+[1.352s] writing ../../build/robotic_chair_nav/robotic_chair_nav.egg-info/PKG-INFO
+[1.352s] writing dependency_links to ../../build/robotic_chair_nav/robotic_chair_nav.egg-info/dependency_links.txt
+[1.352s] writing entry points to ../../build/robotic_chair_nav/robotic_chair_nav.egg-info/entry_points.txt
+[1.352s] writing requirements to ../../build/robotic_chair_nav/robotic_chair_nav.egg-info/requires.txt
+[1.352s] writing top-level names to ../../build/robotic_chair_nav/robotic_chair_nav.egg-info/top_level.txt
+[1.352s] writing manifest file '../../build/robotic_chair_nav/robotic_chair_nav.egg-info/SOURCES.txt'
+[1.354s] reading manifest file '../../build/robotic_chair_nav/robotic_chair_nav.egg-info/SOURCES.txt'
+[1.379s] writing manifest file '../../build/robotic_chair_nav/robotic_chair_nav.egg-info/SOURCES.txt'
+[1.379s] running build
+[1.379s] running build_py
+[1.380s] creating /home/ilyas/ros2_ws/build/robotic_chair_nav/build
+[1.380s] creating /home/ilyas/ros2_ws/build/robotic_chair_nav/build/lib
+[1.380s] creating /home/ilyas/ros2_ws/build/robotic_chair_nav/build/lib/robotic_chair_nav
+[1.380s] copying robotic_chair_nav/obstacle_stop_node.py -> /home/ilyas/ros2_ws/build/robotic_chair_nav/build/lib/robotic_chair_nav
+[1.380s] copying robotic_chair_nav/__init__.py -> /home/ilyas/ros2_ws/build/robotic_chair_nav/build/lib/robotic_chair_nav
+[1.380s] copying robotic_chair_nav/move_forward.py -> /home/ilyas/ros2_ws/build/robotic_chair_nav/build/lib/robotic_chair_nav
+[1.380s] copying robotic_chair_nav/keyboard_control.py -> /home/ilyas/ros2_ws/build/robotic_chair_nav/build/lib/robotic_chair_nav
+[1.380s] running install
+[1.396s] running install_lib
+[1.397s] creating /home/ilyas/ros2_ws/install/robotic_chair_nav/lib/python3.10/site-packages/robotic_chair_nav
+[1.397s] copying /home/ilyas/ros2_ws/build/robotic_chair_nav/build/lib/robotic_chair_nav/obstacle_stop_node.py -> /home/ilyas/ros2_ws/install/robotic_chair_nav/lib/python3.10/site-packages/robotic_chair_nav
+[1.397s] copying /home/ilyas/ros2_ws/build/robotic_chair_nav/build/lib/robotic_chair_nav/__init__.py -> /home/ilyas/ros2_ws/install/robotic_chair_nav/lib/python3.10/site-packages/robotic_chair_nav
+[1.397s] copying /home/ilyas/ros2_ws/build/robotic_chair_nav/build/lib/robotic_chair_nav/move_forward.py -> /home/ilyas/ros2_ws/install/robotic_chair_nav/lib/python3.10/site-packages/robotic_chair_nav
+[1.397s] copying /home/ilyas/ros2_ws/build/robotic_chair_nav/build/lib/robotic_chair_nav/keyboard_control.py -> /home/ilyas/ros2_ws/install/robotic_chair_nav/lib/python3.10/site-packages/robotic_chair_nav
+[1.397s] byte-compiling /home/ilyas/ros2_ws/install/robotic_chair_nav/lib/python3.10/site-packages/robotic_chair_nav/obstacle_stop_node.py to obstacle_stop_node.cpython-310.pyc
+[1.399s] byte-compiling /home/ilyas/ros2_ws/install/robotic_chair_nav/lib/python3.10/site-packages/robotic_chair_nav/__init__.py to __init__.cpython-310.pyc
+[1.399s] byte-compiling /home/ilyas/ros2_ws/install/robotic_chair_nav/lib/python3.10/site-packages/robotic_chair_nav/move_forward.py to move_forward.cpython-310.pyc
+[1.399s] byte-compiling /home/ilyas/ros2_ws/install/robotic_chair_nav/lib/python3.10/site-packages/robotic_chair_nav/keyboard_control.py to keyboard_control.cpython-310.pyc
+[1.399s] running install_data
+[1.399s] creating /home/ilyas/ros2_ws/install/robotic_chair_nav/share/ament_index
+[1.399s] creating /home/ilyas/ros2_ws/install/robotic_chair_nav/share/ament_index/resource_index
+[1.399s] creating /home/ilyas/ros2_ws/install/robotic_chair_nav/share/ament_index/resource_index/packages
+[1.399s] copying resource/robotic_chair_nav -> /home/ilyas/ros2_ws/install/robotic_chair_nav/share/ament_index/resource_index/packages
+[1.399s] copying package.xml -> /home/ilyas/ros2_ws/install/robotic_chair_nav/share/robotic_chair_nav
+[1.399s] creating /home/ilyas/ros2_ws/install/robotic_chair_nav/share/robotic_chair_nav/launch
+[1.399s] copying launch/sim_with_nav.launch.py -> /home/ilyas/ros2_ws/install/robotic_chair_nav/share/robotic_chair_nav/launch
+[1.400s] copying launch/keyboard_control.launch.py -> /home/ilyas/ros2_ws/install/robotic_chair_nav/share/robotic_chair_nav/launch
+[1.400s] running install_egg_info
+[1.400s] Copying ../../build/robotic_chair_nav/robotic_chair_nav.egg-info to /home/ilyas/ros2_ws/install/robotic_chair_nav/lib/python3.10/site-packages/robotic_chair_nav-0.0.1-py3.10.egg-info
+[1.400s] running install_scripts
+[1.415s] Installing keyboard_control script to /home/ilyas/ros2_ws/install/robotic_chair_nav/lib/robotic_chair_nav
+[1.415s] Installing move_forward script to /home/ilyas/ros2_ws/install/robotic_chair_nav/lib/robotic_chair_nav
+[1.415s] Installing obstacle_stop_node script to /home/ilyas/ros2_ws/install/robotic_chair_nav/lib/robotic_chair_nav
+[1.416s] writing list of installed files to '/home/ilyas/ros2_ws/build/robotic_chair_nav/install.log'
+[1.488s] Invoked command in '/home/ilyas/ros2_ws/src/robotic_chair_nav' returned '0': PYTHONPATH=/home/ilyas/ros2_ws/build/robotic_chair_nav/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ilyas/ros2_ws/install/robotic_chair_nav/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robotic_chair_nav build --build-base /home/ilyas/ros2_ws/build/robotic_chair_nav/build install --record /home/ilyas/ros2_ws/build/robotic_chair_nav/install.log --single-version-externally-managed install_data

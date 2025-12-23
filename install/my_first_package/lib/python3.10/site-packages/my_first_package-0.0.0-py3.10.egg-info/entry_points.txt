@@ -1,0 +1,4 @@
+[console_scripts]
+publisher = my_first_package.simple_publisher:main
+subscriber = my_first_package.simple_subscriber:main
+

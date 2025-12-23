@@ -1,0 +1,3 @@
+[console_scripts]
+obstacle_stop = robotic_chair_nav.obstacle_stop_node:main
+
