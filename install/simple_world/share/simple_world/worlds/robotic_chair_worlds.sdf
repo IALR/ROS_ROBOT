@@ -98,8 +98,9 @@
             </box>
           </geometry>
           <material>
-            <ambient>0.92 0.92 0.92 1</ambient>
-            <diffuse>0.92 0.92 0.92 1</diffuse>
+            <!-- Black floor -->
+            <ambient>0.05 0.05 0.05 1</ambient>
+            <diffuse>0.05 0.05 0.05 1</diffuse>
           </material>
         </visual>
       </link>
@@ -108,19 +109,11 @@
     <!-- ============================ -->
     <!-- ROBOT SPAWN (CENTER)        -->
     <!-- ============================ -->
-    <!-- This small cylinder marks an empty spawn area for your robot -->
+    <!-- Visual-only spawn marker so it doesn't collide with the robot -->
     <model name='robot_spawn_marker'>
       <static>1</static>
       <pose>0 0 0.05 0 0 0</pose>
       <link name='spawn_link'>
-        <collision name='collision'>
-          <geometry>
-            <cylinder>
-              <radius>0.2</radius>
-              <length>0.1</length>
-            </cylinder>
-          </geometry>
-        </collision>
         <visual name='visual'>
           <geometry>
             <cylinder>
@@ -150,44 +143,70 @@
     <model name='room_red'>
       <static>1</static>
       <pose>-6 6 1.4 0 0 0</pose>
-      <!-- Room floor patch -->
-      <link name='floor'>
+      <!-- Walls (south wall has door gap facing center) -->
+      <link name='north_wall'>
         <collision name='collision'>
-          <geometry><box><size>6 6 0.05</size></box></geometry>
+          <geometry><box><size>6 0.2 2.8</size></box></geometry>
         </collision>
         <visual name='visual'>
-          <geometry><box><size>6 6 0.05</size></box></geometry>
+          <geometry><box><size>6 0.2 2.8</size></box></geometry>
           <material>
             <ambient>0.9 0.6 0.6 1</ambient>
             <diffuse>0.9 0.6 0.6 1</diffuse>
           </material>
         </visual>
-        <pose>0 0 -1.35 0 0 0</pose>
-      </link>
-      <!-- Walls (south wall has door gap facing center) -->
-      <link name='north_wall'>
-        <collision name='collision'><geometry><box><size>6 0.2 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>6 0.2 2.8</size></box></geometry><material><ambient>0.8 0.2 0.2 1</ambient><diffuse>0.8 0.2 0.2 1</diffuse></material></visual>
         <pose>0 3 0 0 0 0</pose>
       </link>
       <link name='south_wall_left'>
-        <collision name='collision'><geometry><box><size>2 0.2 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>2 0.2 2.8</size></box></geometry><material><ambient>0.8 0.2 0.2 1</ambient><diffuse>0.8 0.2 0.2 1</diffuse></material></visual>
-        <pose>-2  -3 0 0 0 0</pose>
+        <collision name='collision'>
+          <geometry><box><size>2 0.2 2.8</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2 0.2 2.8</size></box></geometry>
+          <material>
+            <ambient>0.9 0.6 0.6 1</ambient>
+            <diffuse>0.9 0.6 0.6 1</diffuse>
+          </material>
+        </visual>
+        <pose>-2 -3 0 0 0 0</pose>
       </link>
       <link name='south_wall_right'>
-        <collision name='collision'><geometry><box><size>2 0.2 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>2 0.2 2.8</size></box></geometry><material><ambient>0.8 0.2 0.2 1</ambient><diffuse>0.8 0.2 0.2 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>2 0.2 2.8</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2 0.2 2.8</size></box></geometry>
+          <material>
+            <ambient>0.9 0.6 0.6 1</ambient>
+            <diffuse>0.9 0.6 0.6 1</diffuse>
+          </material>
+        </visual>
         <pose>2 -3 0 0 0 0</pose>
       </link>
       <link name='west_wall'>
-        <collision name='collision'><geometry><box><size>0.2 6 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>0.2 6 2.8</size></box></geometry><material><ambient>0.8 0.2 0.2 1</ambient><diffuse>0.8 0.2 0.2 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>0.2 6 2.8</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.2 6 2.8</size></box></geometry>
+          <material>
+            <ambient>0.9 0.6 0.6 1</ambient>
+            <diffuse>0.9 0.6 0.6 1</diffuse>
+          </material>
+        </visual>
         <pose>-3 0 0 0 0 0</pose>
       </link>
       <link name='east_wall'>
-        <collision name='collision'><geometry><box><size>0.2 6 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>0.2 6 2.8</size></box></geometry><material><ambient>0.8 0.2 0.2 1</ambient><diffuse>0.8 0.2 0.2 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>0.2 6 2.8</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.2 6 2.8</size></box></geometry>
+          <material>
+            <ambient>0.9 0.6 0.6 1</ambient>
+            <diffuse>0.9 0.6 0.6 1</diffuse>
+          </material>
+        </visual>
         <pose>3 0 0 0 0 0</pose>
       </link>
     </model>
@@ -196,37 +215,69 @@
     <model name='room_green'>
       <static>1</static>
       <pose>6 6 1.4 0 0 0</pose>
-      <link name='floor'>
-        <collision name='collision'><geometry><box><size>6 6 0.05</size></box></geometry></collision>
-        <visual name='visual'>
-          <geometry><box><size>6 6 0.05</size></box></geometry>
-          <material><ambient>0.6 0.9 0.6 1</ambient><diffuse>0.6 0.9 0.6 1</diffuse></material>
-        </visual>
-        <pose>0 0 -1.35 0 0 0</pose>
-      </link>
       <link name='north_wall'>
-        <collision name='collision'><geometry><box><size>6 0.2 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>6 0.2 2.8</size></box></geometry><material><ambient>0.2 0.8 0.2 1</ambient><diffuse>0.2 0.8 0.2 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>6 0.2 2.8</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>6 0.2 2.8</size></box></geometry>
+          <material>
+            <ambient>0.6 0.9 0.6 1</ambient>
+            <diffuse>0.6 0.9 0.6 1</diffuse>
+          </material>
+        </visual>
         <pose>0 3 0 0 0 0</pose>
       </link>
       <link name='south_wall_left'>
-        <collision name='collision'><geometry><box><size>2 0.2 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>2 0.2 2.8</size></box></geometry><material><ambient>0.2 0.8 0.2 1</ambient><diffuse>0.2 0.8 0.2 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>2 0.2 2.8</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2 0.2 2.8</size></box></geometry>
+          <material>
+            <ambient>0.6 0.9 0.6 1</ambient>
+            <diffuse>0.6 0.9 0.6 1</diffuse>
+          </material>
+        </visual>
         <pose>-2 -3 0 0 0 0</pose>
       </link>
       <link name='south_wall_right'>
-        <collision name='collision'><geometry><box><size>2 0.2 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>2 0.2 2.8</size></box></geometry><material><ambient>0.2 0.8 0.2 1</ambient><diffuse>0.2 0.8 0.2 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>2 0.2 2.8</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2 0.2 2.8</size></box></geometry>
+          <material>
+            <ambient>0.6 0.9 0.6 1</ambient>
+            <diffuse>0.6 0.9 0.6 1</diffuse>
+          </material>
+        </visual>
         <pose>2 -3 0 0 0 0</pose>
       </link>
       <link name='west_wall'>
-        <collision name='collision'><geometry><box><size>0.2 6 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>0.2 6 2.8</size></box></geometry><material><ambient>0.2 0.8 0.2 1</ambient><diffuse>0.2 0.8 0.2 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>0.2 6 2.8</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.2 6 2.8</size></box></geometry>
+          <material>
+            <ambient>0.6 0.9 0.6 1</ambient>
+            <diffuse>0.6 0.9 0.6 1</diffuse>
+          </material>
+        </visual>
         <pose>-3 0 0 0 0 0</pose>
       </link>
       <link name='east_wall'>
-        <collision name='collision'><geometry><box><size>0.2 6 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>0.2 6 2.8</size></box></geometry><material><ambient>0.2 0.8 0.2 1</ambient><diffuse>0.2 0.8 0.2 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>0.2 6 2.8</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.2 6 2.8</size></box></geometry>
+          <material>
+            <ambient>0.6 0.9 0.6 1</ambient>
+            <diffuse>0.6 0.9 0.6 1</diffuse>
+          </material>
+        </visual>
         <pose>3 0 0 0 0 0</pose>
       </link>
     </model>
@@ -235,37 +286,69 @@
     <model name='room_blue'>
       <static>1</static>
       <pose>-6 -6 1.4 0 0 0</pose>
-      <link name='floor'>
-        <collision name='collision'><geometry><box><size>6 6 0.05</size></box></geometry></collision>
-        <visual name='visual'>
-          <geometry><box><size>6 6 0.05</size></box></geometry>
-          <material><ambient>0.6 0.6 0.9 1</ambient><diffuse>0.6 0.6 0.9 1</diffuse></material>
-        </visual>
-        <pose>0 0 -1.35 0 0 0</pose>
-      </link>
       <link name='south_wall'>
-        <collision name='collision'><geometry><box><size>6 0.2 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>6 0.2 2.8</size></box></geometry><material><ambient>0.2 0.2 0.8 1</ambient><diffuse>0.2 0.2 0.8 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>6 0.2 2.8</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>6 0.2 2.8</size></box></geometry>
+          <material>
+            <ambient>0.6 0.6 0.9 1</ambient>
+            <diffuse>0.6 0.6 0.9 1</diffuse>
+          </material>
+        </visual>
         <pose>0 -3 0 0 0 0</pose>
       </link>
       <link name='north_wall_left'>
-        <collision name='collision'><geometry><box><size>2 0.2 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>2 0.2 2.8</size></box></geometry><material><ambient>0.2 0.2 0.8 1</ambient><diffuse>0.2 0.2 0.8 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>2 0.2 2.8</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2 0.2 2.8</size></box></geometry>
+          <material>
+            <ambient>0.6 0.6 0.9 1</ambient>
+            <diffuse>0.6 0.6 0.9 1</diffuse>
+          </material>
+        </visual>
         <pose>-2 3 0 0 0 0</pose>
       </link>
       <link name='north_wall_right'>
-        <collision name='collision'><geometry><box><size>2 0.2 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>2 0.2 2.8</size></box></geometry><material><ambient>0.2 0.2 0.8 1</ambient><diffuse>0.2 0.2 0.8 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>2 0.2 2.8</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2 0.2 2.8</size></box></geometry>
+          <material>
+            <ambient>0.6 0.6 0.9 1</ambient>
+            <diffuse>0.6 0.6 0.9 1</diffuse>
+          </material>
+        </visual>
         <pose>2 3 0 0 0 0</pose>
       </link>
       <link name='west_wall'>
-        <collision name='collision'><geometry><box><size>0.2 6 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>0.2 6 2.8</size></box></geometry><material><ambient>0.2 0.2 0.8 1</ambient><diffuse>0.2 0.2 0.8 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>0.2 6 2.8</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.2 6 2.8</size></box></geometry>
+          <material>
+            <ambient>0.6 0.6 0.9 1</ambient>
+            <diffuse>0.6 0.6 0.9 1</diffuse>
+          </material>
+        </visual>
         <pose>-3 0 0 0 0 0</pose>
       </link>
       <link name='east_wall'>
-        <collision name='collision'><geometry><box><size>0.2 6 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>0.2 6 2.8</size></box></geometry><material><ambient>0.2 0.2 0.8 1</ambient><diffuse>0.2 0.2 0.8 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>0.2 6 2.8</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.2 6 2.8</size></box></geometry>
+          <material>
+            <ambient>0.6 0.6 0.9 1</ambient>
+            <diffuse>0.6 0.6 0.9 1</diffuse>
+          </material>
+        </visual>
         <pose>3 0 0 0 0 0</pose>
       </link>
     </model>
@@ -274,61 +357,187 @@
     <model name='room_yellow'>
       <static>1</static>
       <pose>6 -6 1.4 0 0 0</pose>
-      <link name='floor'>
-        <collision name='collision'><geometry><box><size>6 6 0.05</size></box></geometry></collision>
-        <visual name='visual'>
-          <geometry><box><size>6 6 0.05</size></box></geometry>
-          <material><ambient>0.95 0.95 0.6 1</ambient><diffuse>0.95 0.95 0.6 1</diffuse></material>
-        </visual>
-        <pose>0 0 -1.35 0 0 0</pose>
-      </link>
       <link name='south_wall'>
-        <collision name='collision'><geometry><box><size>6 0.2 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>6 0.2 2.8</size></box></geometry><material><ambient>0.8 0.8 0.2 1</ambient><diffuse>0.8 0.8 0.2 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>6 0.2 2.8</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>6 0.2 2.8</size></box></geometry>
+          <material>
+            <ambient>0.95 0.95 0.6 1</ambient>
+            <diffuse>0.95 0.95 0.6 1</diffuse>
+          </material>
+        </visual>
         <pose>0 -3 0 0 0 0</pose>
       </link>
       <link name='north_wall_left'>
-        <collision name='collision'><geometry><box><size>2 0.2 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>2 0.2 2.8</size></box></geometry><material><ambient>0.8 0.8 0.2 1</ambient><diffuse>0.8 0.8 0.2 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>2 0.2 2.8</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2 0.2 2.8</size></box></geometry>
+          <material>
+            <ambient>0.95 0.95 0.6 1</ambient>
+            <diffuse>0.95 0.95 0.6 1</diffuse>
+          </material>
+        </visual>
         <pose>-2 3 0 0 0 0</pose>
       </link>
       <link name='north_wall_right'>
-        <collision name='collision'><geometry><box><size>2 0.2 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>2 0.2 2.8</size></box></geometry><material><ambient>0.8 0.8 0.2 1</ambient><diffuse>0.8 0.8 0.2 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>2 0.2 2.8</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>2 0.2 2.8</size></box></geometry>
+          <material>
+            <ambient>0.95 0.95 0.6 1</ambient>
+            <diffuse>0.95 0.95 0.6 1</diffuse>
+          </material>
+        </visual>
         <pose>2 3 0 0 0 0</pose>
       </link>
       <link name='west_wall'>
-        <collision name='collision'><geometry><box><size>0.2 6 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>0.2 6 2.8</size></box></geometry><material><ambient>0.8 0.8 0.2 1</ambient><diffuse>0.8 0.8 0.2 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>0.2 6 2.8</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.2 6 2.8</size></box></geometry>
+          <material>
+            <ambient>0.95 0.95 0.6 1</ambient>
+            <diffuse>0.95 0.95 0.6 1</diffuse>
+          </material>
+        </visual>
         <pose>-3 0 0 0 0 0</pose>
       </link>
       <link name='east_wall'>
-        <collision name='collision'><geometry><box><size>0.2 6 2.8</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>0.2 6 2.8</size></box></geometry><material><ambient>0.8 0.8 0.2 1</ambient><diffuse>0.8 0.8 0.2 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>0.2 6 2.8</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.2 6 2.8</size></box></geometry>
+          <material>
+            <ambient>0.95 0.95 0.6 1</ambient>
+            <diffuse>0.95 0.95 0.6 1</diffuse>
+          </material>
+        </visual>
         <pose>3 0 0 0 0 0</pose>
       </link>
     </model>
 
     <!-- ============================ -->
+    <!-- WHITE LINES AT DOOR ENTRANCES -->
+    <!-- ============================ -->
+    <model name='door_markers'>
+      <static>1</static>
+
+      <!-- RED room door (top-left) at world (-6, 3) -->
+      <link name='red_door_line'>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>2.0 0.15 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+        <pose>-6 3 0.055 0 0 0</pose>
+      </link>
+
+      <!-- GREEN room door (top-right) at world (6, 3) -->
+      <link name='green_door_line'>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>2.0 0.15 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+        <pose>6 3 0.055 0 0 0</pose>
+      </link>
+
+      <!-- BLUE room door (bottom-left) at world (-6, -3) -->
+      <link name='blue_door_line'>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>2.0 0.15 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+        <pose>-6 -3 0.055 0 0 0</pose>
+      </link>
+
+      <!-- YELLOW room door (bottom-right) at world (6, -3) -->
+      <link name='yellow_door_line'>
+        <visual name='visual'>
+          <geometry>
+            <box>
+              <size>2.0 0.15 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+        <pose>6 -3 0.055 0 0 0</pose>
+      </link>
+
+    </model>
+
+    <!-- ============================ -->
     <!-- OBSTACLES AROUND CENTER     -->
     <!-- ============================ -->
-    <!-- Obstacles are kept away from exact center (0,0) but
-         close enough for navigation and path planning. -->
     <model name='obstacles'>
       <static>1</static>
       <link name='box1'>
-        <collision name='collision'><geometry><box><size>1.0 0.6 1.0</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>1.0 0.6 1.0</size></box></geometry><material><ambient>0.4 0.4 0.4 1</ambient><diffuse>0.4 0.4 0.4 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>1.0 0.6 1.0</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>1.0 0.6 1.0</size></box></geometry>
+          <material>
+            <ambient>0.4 0.4 0.4 1</ambient>
+            <diffuse>0.4 0.4 0.4 1</diffuse>
+          </material>
+        </visual>
         <pose>-3 0 0.5 0 0 0</pose>
       </link>
       <link name='box2'>
-        <collision name='collision'><geometry><box><size>0.8 0.8 1.0</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>0.8 0.8 1.0</size></box></geometry><material><ambient>0.4 0.4 0.5 1</ambient><diffuse>0.4 0.4 0.5 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>0.8 0.8 1.0</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.8 0.8 1.0</size></box></geometry>
+          <material>
+            <ambient>0.4 0.4 0.5 1</ambient>
+            <diffuse>0.4 0.4 0.5 1</diffuse>
+          </material>
+        </visual>
         <pose>3 -1.5 0.5 0 0 0</pose>
       </link>
       <link name='box3'>
-        <collision name='collision'><geometry><box><size>0.6 1.2 1.0</size></box></geometry></collision>
-        <visual name='visual'><geometry><box><size>0.6 1.2 1.0</size></box></geometry><material><ambient>0.5 0.4 0.4 1</ambient><diffuse>0.5 0.4 0.4 1</diffuse></material></visual>
+        <collision name='collision'>
+          <geometry><box><size>0.6 1.2 1.0</size></box></geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry><box><size>0.6 1.2 1.0</size></box></geometry>
+          <material>
+            <ambient>0.5 0.4 0.4 1</ambient>
+            <diffuse>0.5 0.4 0.4 1</diffuse>
+          </material>
+        </visual>
         <pose>0 3 0.5 0 0 0</pose>
       </link>
     </model>
@@ -354,4 +563,3 @@
 
   </world>
 </sdf>
-

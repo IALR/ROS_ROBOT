@@ -1,0 +1,24 @@
+[0.049s] Invoking command in '/home/ilyas/ros2_ws/build/robotic_chair_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ilyas/ros2_ws/install/robotic_chair_nav:/home/ilyas/ros2_ws/install/my_first_package:/home/ilyas/ros2_ws/src/robotic_chair_nav/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/my_first_package:/opt/ros/humble /usr/bin/cmake --build /home/ilyas/ros2_ws/build/robotic_chair_description -- -j3 -l3
+[0.377s] Invoked command in '/home/ilyas/ros2_ws/build/robotic_chair_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ilyas/ros2_ws/install/robotic_chair_nav:/home/ilyas/ros2_ws/install/my_first_package:/home/ilyas/ros2_ws/src/robotic_chair_nav/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/my_first_package:/opt/ros/humble /usr/bin/cmake --build /home/ilyas/ros2_ws/build/robotic_chair_description -- -j3 -l3
+[0.379s] Invoking command in '/home/ilyas/ros2_ws/build/robotic_chair_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ilyas/ros2_ws/install/robotic_chair_nav:/home/ilyas/ros2_ws/install/my_first_package:/home/ilyas/ros2_ws/src/robotic_chair_nav/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/my_first_package:/opt/ros/humble /usr/bin/cmake --install /home/ilyas/ros2_ws/build/robotic_chair_description
+[0.403s] -- Install configuration: ""
+[0.405s] -- Up-to-date: /home/ilyas/ros2_ws/install/robotic_chair_description/share/robotic_chair_description/urdf
+[0.405s] -- Up-to-date: /home/ilyas/ros2_ws/install/robotic_chair_description/share/robotic_chair_description/urdf/chair.urdf
+[0.405s] -- Up-to-date: /home/ilyas/ros2_ws/install/robotic_chair_description/share/robotic_chair_description/launch
+[0.405s] -- Up-to-date: /home/ilyas/ros2_ws/install/robotic_chair_description/share/robotic_chair_description/launch/sim.launch.py
+[0.405s] -- Up-to-date: /home/ilyas/ros2_ws/install/robotic_chair_description/share/ament_index/resource_index/package_run_dependencies/robotic_chair_description
+[0.405s] -- Up-to-date: /home/ilyas/ros2_ws/install/robotic_chair_description/share/ament_index/resource_index/parent_prefix_path/robotic_chair_description
+[0.405s] -- Up-to-date: /home/ilyas/ros2_ws/install/robotic_chair_description/share/robotic_chair_description/environment/ament_prefix_path.sh
+[0.405s] -- Up-to-date: /home/ilyas/ros2_ws/install/robotic_chair_description/share/robotic_chair_description/environment/ament_prefix_path.dsv
+[0.405s] -- Up-to-date: /home/ilyas/ros2_ws/install/robotic_chair_description/share/robotic_chair_description/environment/path.sh
+[0.406s] -- Up-to-date: /home/ilyas/ros2_ws/install/robotic_chair_description/share/robotic_chair_description/environment/path.dsv
+[0.406s] -- Up-to-date: /home/ilyas/ros2_ws/install/robotic_chair_description/share/robotic_chair_description/local_setup.bash
+[0.406s] -- Up-to-date: /home/ilyas/ros2_ws/install/robotic_chair_description/share/robotic_chair_description/local_setup.sh
+[0.406s] -- Up-to-date: /home/ilyas/ros2_ws/install/robotic_chair_description/share/robotic_chair_description/local_setup.zsh
+[0.406s] -- Up-to-date: /home/ilyas/ros2_ws/install/robotic_chair_description/share/robotic_chair_description/local_setup.dsv
+[0.406s] -- Installing: /home/ilyas/ros2_ws/install/robotic_chair_description/share/robotic_chair_description/package.dsv
+[0.406s] -- Up-to-date: /home/ilyas/ros2_ws/install/robotic_chair_description/share/ament_index/resource_index/packages/robotic_chair_description
+[0.406s] -- Up-to-date: /home/ilyas/ros2_ws/install/robotic_chair_description/share/robotic_chair_description/cmake/robotic_chair_descriptionConfig.cmake
+[0.406s] -- Up-to-date: /home/ilyas/ros2_ws/install/robotic_chair_description/share/robotic_chair_description/cmake/robotic_chair_descriptionConfig-version.cmake
+[0.406s] -- Up-to-date: /home/ilyas/ros2_ws/install/robotic_chair_description/share/robotic_chair_description/package.xml
+[0.445s] Invoked command in '/home/ilyas/ros2_ws/build/robotic_chair_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ilyas/ros2_ws/install/robotic_chair_nav:/home/ilyas/ros2_ws/install/my_first_package:/home/ilyas/ros2_ws/src/robotic_chair_nav/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/my_first_package:/opt/ros/humble /usr/bin/cmake --install /home/ilyas/ros2_ws/build/robotic_chair_description

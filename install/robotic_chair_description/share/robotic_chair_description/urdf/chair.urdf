@@ -15,7 +15,6 @@
   <!-- BASE FOOTPRINT (Required for Navigation) -->
   <!-- ============================================= -->
   <link name="base_footprint">
-    <!-- Visible transparent footprint to see robot base area -->
     <visual>
       <geometry>
         <cylinder radius="0.35" length="0.01"/>
@@ -31,16 +30,40 @@
   </joint>
 
   <!-- ============================================= -->
-  <!-- BASE LINK -->
+  <!-- BASE LINK (POWER BASE / CHASSIS) -->
   <!-- ============================================= -->
   <link name="base_link">
+    <!-- Lower chassis -->
     <visual>
-      <geometry><box size="0.6 0.5 0.18"/></geometry>
+      <origin xyz="0 0 -0.01"/>
+      <geometry>
+        <box size="0.7 0.55 0.08"/>
+      </geometry>
       <material name="mat_dark_grey"/>
     </visual>
+    <!-- Upper chassis -->
+    <visual>
+      <origin xyz="0 0 0.05"/>
+      <geometry>
+        <box size="0.6 0.45 0.10"/>
+      </geometry>
+      <material name="mat_light_grey"/>
+    </visual>
+    <!-- Side panel -->
+    <visual>
+      <origin xyz="-0.15 0 0.02"/>
+      <geometry>
+        <box size="0.05 0.55 0.16"/>
+      </geometry>
+      <material name="mat_dark_grey"/>
+    </visual>
+
     <collision>
-      <geometry><box size="0.6 0.5 0.18"/></geometry>
+      <geometry>
+        <box size="0.6 0.5 0.18"/>
+      </geometry>
     </collision>
+
     <inertial>
       <origin xyz="0 0 0"/>
       <mass value="25"/>
@@ -50,18 +73,57 @@
   </link>
 
   <!-- ============================================= -->
-  <!-- SEAT -->
+  <!-- SEAT (CUSHION + ARMRESTS) -->
   <!-- ============================================= -->
   <link name="seat_link">
+    <!-- Seat cushion -->
     <visual>
       <origin xyz="0 0 0.20"/>
-      <geometry><box size="0.55 0.45 0.05"/></geometry>
+      <geometry>
+        <box size="0.55 0.48 0.06"/>
+      </geometry>
       <material name="mat_fabric_blue"/>
     </visual>
+    <!-- Left armrest -->
+    <visual>
+      <origin xyz="0 0.26 0.27"/>
+      <geometry>
+        <box size="0.48 0.04 0.06"/>
+      </geometry>
+      <material name="mat_dark_grey"/>
+    </visual>
+    <!-- Right armrest -->
+    <visual>
+      <origin xyz="0 -0.26 0.27"/>
+      <geometry>
+        <box size="0.48 0.04 0.06"/>
+      </geometry>
+      <material name="mat_dark_grey"/>
+    </visual>
+    <!-- Left armrest support -->
+    <visual>
+      <origin xyz="-0.18 0.26 0.20"/>
+      <geometry>
+        <box size="0.04 0.04 0.20"/>
+      </geometry>
+      <material name="mat_dark_grey"/>
+    </visual>
+    <!-- Right armrest support -->
+    <visual>
+      <origin xyz="-0.18 -0.26 0.20"/>
+      <geometry>
+        <box size="0.04 0.04 0.20"/>
+      </geometry>
+      <material name="mat_dark_grey"/>
+    </visual>
+
     <collision>
       <origin xyz="0 0 0.20"/>
-      <geometry><box size="0.55 0.45 0.05"/></geometry>
+      <geometry>
+        <box size="0.55 0.45 0.05"/>
+      </geometry>
     </collision>
+
     <inertial>
       <origin xyz="0 0 0.20"/>
       <mass value="5"/>
@@ -80,15 +142,38 @@
   <!-- BACKREST -->
   <!-- ============================================= -->
   <link name="backrest_link">
+    <!-- Main backrest -->
     <visual>
-      <origin xyz="-0.20 0 0.35"/>
-      <geometry><box size="0.05 0.45 0.35"/></geometry>
+      <origin xyz="-0.20 0 0.38"/>
+      <geometry>
+        <box size="0.05 0.45 0.40"/>
+      </geometry>
       <material name="mat_fabric_blue"/>
     </visual>
+    <!-- Frame bar -->
+    <visual>
+      <origin xyz="-0.22 0 0.25"/>
+      <geometry>
+        <box size="0.03 0.50 0.05"/>
+      </geometry>
+      <material name="mat_dark_grey"/>
+    </visual>
+    <!-- Headrest -->
+    <visual>
+      <origin xyz="-0.24 0 0.55"/>
+      <geometry>
+        <box size="0.08 0.30 0.10"/>
+      </geometry>
+      <material name="mat_fabric_blue"/>
+    </visual>
+
     <collision>
       <origin xyz="-0.20 0 0.35"/>
-      <geometry><box size="0.05 0.45 0.35"/></geometry>
+      <geometry>
+        <box size="0.05 0.45 0.35"/>
+      </geometry>
     </collision>
+
     <inertial>
       <origin xyz="-0.20 0 0.35"/>
       <mass value="3"/>
@@ -104,18 +189,31 @@
   </joint>
 
   <!-- ============================================= -->
-  <!-- LEFT WHEEL -->
+  <!-- LEFT DRIVE WHEEL -->
   <!-- ============================================= -->
   <link name="left_wheel">
     <visual>
       <origin rpy="1.5708 0 0"/>
-      <geometry><cylinder radius="0.11" length="0.06"/></geometry>
+      <geometry>
+        <cylinder radius="0.16" length="0.06"/>
+      </geometry>
       <material name="mat_rubber_black"/>
     </visual>
+    <visual>
+      <origin rpy="1.5708 0 0"/>
+      <geometry>
+        <cylinder radius="0.13" length="0.03"/>
+      </geometry>
+      <material name="mat_light_grey"/>
+    </visual>
+
     <collision>
       <origin rpy="1.5708 0 0"/>
-      <geometry><cylinder radius="0.11" length="0.06"/></geometry>
+      <geometry>
+        <cylinder radius="0.16" length="0.06"/>
+      </geometry>
     </collision>
+
     <inertial>
       <origin xyz="0 0 0"/>
       <mass value="2"/>
@@ -127,24 +225,37 @@
   <joint name="left_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="left_wheel"/>
-    <origin xyz="0 0.27 0.0" rpy="0 0 0"/>
+    <origin xyz="-0.05 0.30 0.0" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
     <dynamics damping="0.7" friction="0.1"/>
   </joint>
 
   <!-- ============================================= -->
-  <!-- RIGHT WHEEL -->
+  <!-- RIGHT DRIVE WHEEL -->
   <!-- ============================================= -->
   <link name="right_wheel">
     <visual>
       <origin rpy="1.5708 0 0"/>
-      <geometry><cylinder radius="0.11" length="0.06"/></geometry>
+      <geometry>
+        <cylinder radius="0.16" length="0.06"/>
+      </geometry>
       <material name="mat_rubber_black"/>
     </visual>
+    <visual>
+      <origin rpy="1.5708 0 0"/>
+      <geometry>
+        <cylinder radius="0.13" length="0.03"/>
+      </geometry>
+      <material name="mat_light_grey"/>
+    </visual>
+
     <collision>
       <origin rpy="1.5708 0 0"/>
-      <geometry><cylinder radius="0.11" length="0.06"/></geometry>
+      <geometry>
+        <cylinder radius="0.16" length="0.06"/>
+      </geometry>
     </collision>
+
     <inertial>
       <origin xyz="0 0 0"/>
       <mass value="2"/>
@@ -156,7 +267,7 @@
   <joint name="right_wheel_joint" type="continuous">
     <parent link="base_link"/>
     <child link="right_wheel"/>
-    <origin xyz="0 -0.27 0.0" rpy="0 0 0"/>
+    <origin xyz="-0.05 -0.30 0.0" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
     <dynamics damping="0.7" friction="0.1"/>
   </joint>
@@ -183,7 +294,7 @@
   <joint name="front_left_caster_joint" type="fixed">
     <parent link="base_link"/>
     <child link="front_left_caster"/>
-    <origin xyz="0.25 0.20 -0.06"/>
+    <origin xyz="0.32 0.18 -0.07"/>
   </joint>
 
   <link name="front_right_caster">
@@ -205,7 +316,38 @@
   <joint name="front_right_caster_joint" type="fixed">
     <parent link="base_link"/>
     <child link="front_right_caster"/>
-    <origin xyz="0.25 -0.20 -0.06"/>
+    <origin xyz="0.32 -0.18 -0.07"/>
+  </joint>
+
+  <!-- ============================================= -->
+  <!-- FOOTREST -->
+  <!-- ============================================= -->
+  <link name="footrest_link">
+    <visual>
+      <origin xyz="0.32 0 -0.02"/>
+      <geometry>
+        <box size="0.35 0.30 0.02"/>
+      </geometry>
+      <material name="mat_dark_grey"/>
+    </visual>
+    <collision>
+      <origin xyz="0.32 0 -0.02"/>
+      <geometry>
+        <box size="0.35 0.30 0.02"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.32 0 -0.02"/>
+      <mass value="0.5"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0"
+               iyy="0.001" iyz="0.0" izz="0.001"/>
+    </inertial>
+  </link>
+
+  <joint name="footrest_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="footrest_link"/>
+    <origin xyz="0 0 -0.08"/>
   </joint>
 
   <!-- ============================================= -->
@@ -259,7 +401,6 @@
     <origin xyz="0.32 0 0.25"/>
   </joint>
 
-  <!-- Camera Optical Frame (ROS Convention) -->
   <link name="camera_optical_link"/>
 
   <joint name="camera_optical_joint" type="fixed">
@@ -322,8 +463,6 @@
   <!-- ============================================= -->
   <!-- GAZEBO PROPERTIES -->
   <!-- ============================================= -->
-
-  <!-- Materials -->
   <gazebo reference="base_link">
     <material>Gazebo/Grey</material>
     <mu1>0.5</mu1>
@@ -353,7 +492,6 @@
     <material>Gazebo/Black</material>
   </gazebo>
 
-  <!-- Wheel Physics -->
   <gazebo reference="left_wheel">
     <material>Gazebo/Black</material>
     <mu1>0.85</mu1>
@@ -374,7 +512,6 @@
     <maxVel>1.0</maxVel>
   </gazebo>
 
-  <!-- Caster Physics -->
   <gazebo reference="front_left_caster">
     <material>Gazebo/Grey</material>
     <mu1>0.1</mu1>
@@ -392,7 +529,7 @@
   </gazebo>
 
   <!-- ============================================= -->
-  <!-- TRANSMISSIONS (for ROS Control) -->
+  <!-- TRANSMISSIONS -->
   <!-- ============================================= -->
   <transmission name="left_wheel_trans">
     <type>transmission_interface/SimpleTransmission</type>
@@ -420,26 +557,16 @@
   <gazebo>
     <plugin name="diff_drive_controller" filename="libgazebo_ros_diff_drive.so">
       <update_rate>50</update_rate>
-
-      <!-- Wheel Configuration -->
       <left_joint>left_wheel_joint</left_joint>
       <right_joint>right_wheel_joint</right_joint>
       <wheel_separation>0.54</wheel_separation>
       <wheel_diameter>0.22</wheel_diameter>
-
-      <!-- Limits -->
       <max_wheel_torque>20</max_wheel_torque>
       <max_wheel_acceleration>1.0</max_wheel_acceleration>
-
-      <!-- Topics -->
       <command_topic>cmd_vel</command_topic>
       <odometry_topic>odom</odometry_topic>
-
-      <!-- Frames -->
       <odometry_frame>odom</odometry_frame>
       <robot_base_frame>base_footprint</robot_base_frame>
-
-      <!-- Publishing -->
       <publish_odom>true</publish_odom>
       <publish_odom_tf>true</publish_odom_tf>
       <publish_wheel_tf>true</publish_wheel_tf>
@@ -447,7 +574,7 @@
   </gazebo>
 
   <!-- ============================================= -->
-  <!-- LIDAR SENSOR -->
+  <!-- LIDAR SENSOR (FIXED REMAPPING) -->
   <!-- ============================================= -->
   <gazebo reference="lidar_link">
     <sensor name="lidar" type="ray">
@@ -476,7 +603,8 @@
       </ray>
       <plugin name="gazebo_ros_laser" filename="libgazebo_ros_ray_sensor.so">
         <ros>
-          <remapping>scan:=/scan</remapping>
+          <!-- Publish LaserScan on /scan -->
+          <remapping>~/out:=/scan</remapping>
         </ros>
         <frame_name>lidar_link</frame_name>
         <output_type>sensor_msgs/LaserScan</output_type>
@@ -538,7 +666,7 @@
   </gazebo>
 
   <!-- ============================================= -->
-  <!-- CLIFF SENSOR PLUGIN -->
+  <!-- CLIFF SENSOR PLUGIN (FIXED REMAPPING) -->
   <!-- ============================================= -->
   <gazebo reference="cliff_sensor_front">
     <sensor name="cliff_sensor" type="ray">
@@ -562,7 +690,7 @@
       </ray>
       <plugin name="gazebo_ros_cliff_sensor" filename="libgazebo_ros_ray_sensor.so">
         <ros>
-          <remapping>scan:=/cliff_sensor</remapping>
+          <remapping>~/out:=/cliff_sensor</remapping>
         </ros>
         <frame_name>cliff_sensor_front</frame_name>
         <output_type>sensor_msgs/LaserScan</output_type>
@@ -589,7 +717,7 @@
       <ros>
         <remapping>data:=ground_truth_pose</remapping>
       </ros>
-      <body_name>base_link</body_name>
+      <body_name>robotic_chair::base_link</body_name>
       <frame_name>odom</frame_name>
       <update_rate>50</update_rate>
     </plugin>

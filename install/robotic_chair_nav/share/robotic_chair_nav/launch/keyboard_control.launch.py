@@ -14,8 +14,7 @@ def generate_launch_description():
     )
 
     robot_urdf = os.path.join(
-        FindPackageShare("robotic_chair_description")
-        .find("robotic_chair_description"),
+        FindPackageShare("robotic_chair_description").find("robotic_chair_description"),
         "urdf",
         "chair.urdf"
     )
@@ -53,10 +52,10 @@ def generate_launch_description():
             parameters=[
                 {"linear_speed": 0.3},
                 {"angular_speed": 0.5},
-                {"stop_distance": 0.4},
+                {"stop_distance": 0.1},
                 {"scan_topic": "/scan"},
                 {"cmd_vel_topic": "/cmd_vel"},
-                {"front_half_angle_deg": 30.0}
+                {"front_half_angle_deg": 20.0}
             ]
         ),
     ])

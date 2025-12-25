@@ -1,0 +1,24 @@
+[0.728s] Invoking command in '/home/ilyas/ros2_ws/build/simple_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ilyas/ros2_ws/install/robotic_chair_nav:/home/ilyas/ros2_ws/install/my_first_package:/home/ilyas/ros2_ws/src/robotic_chair_nav/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/my_first_package:/opt/ros/humble /usr/bin/cmake --build /home/ilyas/ros2_ws/build/simple_world -- -j3 -l3
+[1.458s] Invoked command in '/home/ilyas/ros2_ws/build/simple_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ilyas/ros2_ws/install/robotic_chair_nav:/home/ilyas/ros2_ws/install/my_first_package:/home/ilyas/ros2_ws/src/robotic_chair_nav/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/my_first_package:/opt/ros/humble /usr/bin/cmake --build /home/ilyas/ros2_ws/build/simple_world -- -j3 -l3
+[1.498s] Invoking command in '/home/ilyas/ros2_ws/build/simple_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ilyas/ros2_ws/install/robotic_chair_nav:/home/ilyas/ros2_ws/install/my_first_package:/home/ilyas/ros2_ws/src/robotic_chair_nav/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/my_first_package:/opt/ros/humble /usr/bin/cmake --install /home/ilyas/ros2_ws/build/simple_world
+[1.553s] -- Install configuration: ""
+[1.569s] -- Up-to-date: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/worlds
+[1.609s] -- Up-to-date: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/worlds/robotic_chair_worlds.world
+[1.637s] -- Up-to-date: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/worlds/robotic_chair_worlds.sdf
+[1.637s] -- Up-to-date: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/worlds/simple_world2.world
+[1.637s] -- Up-to-date: /home/ilyas/ros2_ws/install/simple_world/share/ament_index/resource_index/package_run_dependencies/simple_world
+[2.540s] -- Up-to-date: /home/ilyas/ros2_ws/install/simple_world/share/ament_index/resource_index/parent_prefix_path/simple_world
+[2.540s] -- Up-to-date: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/environment/ament_prefix_path.sh
+[2.540s] -- Up-to-date: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/environment/ament_prefix_path.dsv
+[2.540s] -- Up-to-date: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/environment/path.sh
+[2.540s] -- Up-to-date: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/environment/path.dsv
+[2.540s] -- Up-to-date: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/local_setup.bash
+[2.540s] -- Up-to-date: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/local_setup.sh
+[2.540s] -- Up-to-date: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/local_setup.zsh
+[2.540s] -- Up-to-date: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/local_setup.dsv
+[2.540s] -- Installing: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/package.dsv
+[2.581s] -- Up-to-date: /home/ilyas/ros2_ws/install/simple_world/share/ament_index/resource_index/packages/simple_world
+[2.581s] -- Up-to-date: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/cmake/simple_worldConfig.cmake
+[2.581s] -- Up-to-date: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/cmake/simple_worldConfig-version.cmake
+[2.581s] -- Up-to-date: /home/ilyas/ros2_ws/install/simple_world/share/simple_world/package.xml
+[2.586s] Invoked command in '/home/ilyas/ros2_ws/build/simple_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ilyas/ros2_ws/install/robotic_chair_nav:/home/ilyas/ros2_ws/install/my_first_package:/home/ilyas/ros2_ws/src/robotic_chair_nav/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/robotic_chair_nav:/home/ilyas/ros2_ws/src/install/my_first_package:/opt/ros/humble /usr/bin/cmake --install /home/ilyas/ros2_ws/build/simple_world
